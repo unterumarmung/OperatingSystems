@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NumismatistHandbook</class>
+ <widget class="QMainWindow" name="NumismatistHandbook">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>620</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>620</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Нумизмат</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>641</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: black;</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>20</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="nameLayout">
+     <item>
+      <widget class="QLabel" name="nameLabel">
+       <property name="text">
+        <string>Наименование монеты</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="nameLineEdit">
+       <property name="maxLength">
+        <number>50</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>80</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="valueLayout">
+     <item>
+      <widget class="QLabel" name="valueLabel">
+       <property name="text">
+        <string>Номинал монеты</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="valueLineEdit">
+       <property name="maxLength">
+        <number>30</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QCheckBox" name="rarityCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>290</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Раритет</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>310</y>
+      <width>301</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="numberLayout">
+     <item>
+      <widget class="QLabel" name="numberLabel">
+       <property name="text">
+        <string>Количество сохранившихся монет</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="numberSpinBox">
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>1000</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>360</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="countryLayout">
+     <item>
+      <widget class="QLabel" name="countryLabel">
+       <property name="text">
+        <string>Государство, выпустившее монету</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="countryComboBox">
+       <item>
+        <property name="text">
+         <string>Российская Империя</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>СССР</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Россия</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_5">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>420</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="qualitiesLayout">
+     <item>
+      <widget class="QLabel" name="qualitiesLabel">
+       <property name="text">
+        <string>Особенности</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="qualitiesLineEdit">
+       <property name="maxLength">
+        <number>100</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>490</y>
+      <width>971</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="buttonsLayout">
+     <item>
+      <widget class="QPushButton" name="createPushButton">
+       <property name="text">
+        <string>Создать</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="deletePushButton">
+       <property name="text">
+        <string>Удалить</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="fillPushButton">
+       <property name="text">
+        <string>Заполнить</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="savePushButton">
+       <property name="text">
+        <string>Сохранить</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="dateGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>140</y>
+      <width>299</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Год выпуска</string>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>299</width>
+       <height>117</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="eraLayout">
+      <item>
+       <widget class="QLabel" name="eraLabel">
+        <property name="text">
+         <string>Эра</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="eraComboBox">
+        <item>
+         <property name="text">
+          <string>До нашей эры</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Наша эра</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="centuryLayout">
+        <item>
+         <widget class="QLabel" name="centuryLabel">
+          <property name="text">
+           <string>Век</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="centurySpinBox">
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>20</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="yearLayout">
+        <item>
+         <widget class="QLabel" name="yearLabel">
+          <property name="text">
+           <string>Год</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="yearSpinBox"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="fileMenu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="createAction"/>
+    <addaction name="openAction"/>
+    <addaction name="saveAction"/>
+    <addaction name="saveAsAction"/>
+   </widget>
+   <widget class="QMenu" name="editMenu">
+    <property name="title">
+     <string>Правка</string>
+    </property>
+    <addaction name="createItemAction"/>
+    <addaction name="deleteItemAction"/>
+    <addaction name="saveItemAction"/>
+    <addaction name="separator"/>
+    <addaction name="fillAction"/>
+   </widget>
+   <addaction name="fileMenu"/>
+   <addaction name="editMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="createAction">
+   <property name="text">
+    <string>Создать</string>
+   </property>
+  </action>
+  <action name="openAction">
+   <property name="text">
+    <string>Открыть...</string>
+   </property>
+  </action>
+  <action name="saveAction">
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+  </action>
+  <action name="saveAsAction">
+   <property name="text">
+    <string>Сохранить как...</string>
+   </property>
+  </action>
+  <action name="createItemAction">
+   <property name="text">
+    <string>Создать запись</string>
+   </property>
+  </action>
+  <action name="deleteItemAction">
+   <property name="text">
+    <string>Удалить запись</string>
+   </property>
+  </action>
+  <action name="saveItemAction">
+   <property name="text">
+    <string>Сохранить запись</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>Заполнить</string>
+   </property>
+  </action>
+  <action name="fillAction">
+   <property name="text">
+    <string>Заполнить</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
